@@ -70,3 +70,8 @@ footer {
 .contact-info p {
     margin-bottom: 5px;
 }
+
+.contact-mail {
+    color: #fff;
+    text-decoration: none;
+}
