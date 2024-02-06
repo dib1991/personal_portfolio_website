@@ -21,14 +21,15 @@ header {
 /* Navigation bar css -------------- */
 /* from here */
 nav {
-    position: absolute;
-    top: 20px;
+    position: fixed;
+    top: 0;
     width: 100%;
     background-color: #000000;
     color: white;
-    padding-top: 30px;
+    padding-top: 40px;
     display:flex;
     justify-content: space-between;
+    z-index: 1000;
 }
 
 nav ul {
@@ -59,7 +60,7 @@ nav ul li a {
 }
 
 .menu-option-left:hover {
-    font-size: 50px;
+    font-size: 40px;
     opacity: 0.6;
 }
 
@@ -71,6 +72,7 @@ nav ul li a {
 
 .menu-option-right li a:hover {
     color: #a5a5a5;
+    font-size: 22px;
 }
 /* to here----------------- */
 
@@ -140,7 +142,7 @@ nav ul li a {
 }
 
 .visit-btn {
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 40%;
     font-size: 20px;
@@ -159,7 +161,7 @@ nav ul li a {
 }
 
 .reaction-btn {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     right: 0;
     margin-right: 50px;
@@ -187,6 +189,93 @@ nav ul li a {
     color: #a5a5a5;
 }
 /* to here---------------------- */
+/* --------------------------------------------------------------- */
+
+/* main css--------------------------------------------------- */
+main {
+    height: 100vh;
+    background-color: #000000;
+    color: white;
+}
+
+main h1 {
+    margin-left: 200px;
+    font-size: 40px;
+    padding-top: 180px;
+    padding-bottom: 30px;
+}
+
+/* Designing About page boxes---------------- */
+/* from here */
+.about-container {
+    margin-left: 200px;
+    margin-right: 200px;
+    /* display: flex; */
+    /* justify-content: space-between; */
+}
+
+.about-container ul li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-container section {
+    text-align: left;
+    /* background-color: #325ad2; */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    width: 45%;
+    margin-bottom: 20px;
+}
+
+.about-container section h3 {
+    font-size: 25px;
+    color: #807e7e;
+    padding-bottom: 20px;
+}
+
+.about-container section p {
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+/* new div container1------------------------- */
+.about-container1 {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.about-container1 ul li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-container1 section {
+    text-align: left;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    width: 45%;
+    margin-bottom: 20px;
+}
+
+.about-container1 section h3 {
+    font-size: 25px;
+    color: #807e7e;
+    padding-bottom: 20px;
+}
+
+.about-container1 section p {
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+
+
+
 
 footer {
     background-color: #333;
